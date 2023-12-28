@@ -5,8 +5,8 @@ foreach($notasalunos as $notas){
     if($notas >= 6){
         echo "<p> Aprovado!</p>";
     }else{
-        echo "<p>Reprovado</p>"
-    }
+        echo "<p>Reprovado</p>";
+    };
 }
 
 ?>
