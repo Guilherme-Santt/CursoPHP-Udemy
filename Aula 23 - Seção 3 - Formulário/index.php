@@ -27,12 +27,27 @@
 
         <?php
             if(isset($_POST['enviado'])){
+                if(empty($_POST['nome'])){
+                    echo '<p class="error">Dígite um nome</p>';
+                    die();
+                };
+                if(empty($_POST['email'])){
+                    echo '<p class="error">Dígite um nome</p>';
+                    die();
+                };
+                if(empty($_POST['site'])){
+                    echo '<p class="error">Dígite um nome</p>';
+                    die();
+                };
+                if(empty($_POST['genero'])){
+                    echo '<p class="error">Dígite um nome</p>';
+                    die();
+                };   
 
                 $genero = "Não selecionado";
-                
-                if(isset($_POST['genero'])){
+                    if(isset($_POST['genero'])){
                     $genero = $_POST['genero'];         
-                }
+                };
 
                 echo "<p><b> Nome:       </b>" . $_POST['nome']   . "</p>";
                 echo "<p><b> E-Mail:     </b>" . $_POST['email']  . "</p>";
